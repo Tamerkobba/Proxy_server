@@ -1,0 +1,167 @@
+[2024-12-09 05:14:22] 
+
+Starting the Proxy Server
+
+[2024-12-09 05:14:22] Proxy is now listening on port 8080
+[2024-12-09 05:14:22] Initialized socket and listening on port 8080
+[2024-12-09 05:14:50] Received connection from 127.0.0.1:52299
+[2024-12-09 05:14:50] Target domain not whitelisted: example.com
+[2024-12-09 05:15:12] 
+
+Starting the Proxy Server
+
+[2024-12-09 05:15:12] Proxy is now listening on port 8080
+[2024-12-09 05:15:12] Initialized socket and listening on port 8080
+[2024-12-09 05:15:34] Received connection from 127.0.0.1:52320
+[2024-12-09 05:15:34] HTTP request detected: GET http://example.com/
+[2024-12-09 05:15:35] Completed request for client 127.0.0.1
+[2024-12-09 05:16:51] Received connection from 127.0.0.1:52360
+[2024-12-09 05:16:51] HTTPS request detected (CONNECT)
+[2024-12-09 05:16:51] HTTPS tunnel established with www.google.com
+[2024-12-09 05:20:01] Received connection from 127.0.0.1:52420
+[2024-12-09 05:20:01] HTTP request detected: GET http://www.google.com/
+[2024-12-09 05:20:01] Completed request for client 127.0.0.1
+[2024-12-09 05:20:02] Received connection from 127.0.0.1:52423
+[2024-12-09 05:20:02] HTTP request detected: GET http://example.com/
+[2024-12-09 05:20:02] Completed request for client 127.0.0.1
+[2024-12-09 05:20:39] Received connection from 127.0.0.1:52433
+[2024-12-09 05:20:39] HTTP request detected: GET http://example.com/
+[2024-12-09 05:20:39] Completed request for client 127.0.0.1
+[2024-12-09 05:20:39] Received connection from 127.0.0.1:52436
+[2024-12-09 05:20:39] HTTP request detected: GET http://www.google.com/
+[2024-12-09 05:20:39] Completed request for client 127.0.0.1
+[2024-12-09 05:22:40] Received connection from 127.0.0.1:52484
+[2024-12-09 05:22:40] HTTP request detected: GET http://www.google.com/
+[2024-12-09 05:22:41] Completed request for client 127.0.0.1
+[2024-12-09 05:22:47] Received connection from 127.0.0.1:52489
+[2024-12-09 05:22:47] HTTP request detected: GET http://www.google.com/
+[2024-12-09 05:22:47] Completed request for client 127.0.0.1
+[2024-12-09 05:22:48] Received connection from 127.0.0.1:52493
+[2024-12-09 05:22:48] Target domain not whitelisted: facebook.com
+[2024-12-09 05:28:46] Received connection from 127.0.0.1:52688
+[2024-12-09 05:28:46] HTTP request detected: GET http://example.com/
+[2024-12-09 05:28:46] Completed request for client 127.0.0.1
+[2024-12-09 05:28:51] Received connection from 127.0.0.1:52693
+[2024-12-09 05:28:51] HTTP request detected: GET http://example.com/
+[2024-12-09 05:28:51] Completed request for client 127.0.0.1
+[2024-12-09 05:32:25] 
+
+Starting the Proxy Server
+
+[2024-12-09 05:32:25] Proxy is now listening on port 8080
+[2024-12-09 05:32:25] Initialized socket and listening on port 8080
+[2024-12-09 05:32:44] Received connection from 192.168.1.104:52775
+[2024-12-09 05:32:44] Target domain not whitelisted: d.docs.live.net
+[2024-12-09 05:32:46] Received connection from 192.168.1.104:52778
+[2024-12-09 05:32:46] Target domain not whitelisted: functional.events.data.microsoft.com
+[2024-12-09 05:32:50] Received connection from 192.168.1.104:52779
+[2024-12-09 05:32:50] HTTPS request detected (CONNECT)
+[2024-12-09 05:32:50] HTTPS tunnel established with www.google.com
+[2024-12-09 05:32:51] Received connection from 192.168.1.104:52781
+[2024-12-09 05:32:51] Target domain not whitelisted: www.bing.com
+[2024-12-09 05:32:52] Received connection from 192.168.1.104:52785
+[2024-12-09 05:32:52] Target domain not whitelisted: functional.events.data.microsoft.com
+[2024-12-09 05:32:53] Received connection from 192.168.1.104:52786
+[2024-12-09 05:32:53] Received connection from 192.168.1.104:52787
+[2024-12-09 05:32:53] Received connection from 192.168.1.104:52788
+[2024-12-09 05:32:53] Target domain not whitelisted: www.gstatic.com
+[2024-12-09 05:32:53] HTTPS request detected (CONNECT)
+[2024-12-09 05:32:53] HTTPS tunnel established with apis.google.com
+[2024-12-09 05:32:53] Received connection from 192.168.1.104:52791
+[2024-12-09 05:32:53] HTTPS request detected (CONNECT)
+[2024-12-09 05:32:53] Received connection from 192.168.1.104:52792
+[2024-12-09 05:32:53] Received connection from 192.168.1.104:52793
+[2024-12-09 05:32:53] HTTPS request detected (CONNECT)
+[2024-12-09 05:32:53] HTTPS request detected (CONNECT)
+[2024-12-09 05:32:53] HTTPS tunnel established with lh3.google.com
+[2024-12-09 05:32:53] HTTPS tunnel established with ogads-pa.clients6.google.com
+[2024-12-09 05:32:54] HTTPS tunnel established with waa-pa.clients6.google.com
+[2024-12-09 05:32:54] Received connection from 192.168.1.104:52797
+[2024-12-09 05:32:54] Target domain not whitelisted: lh3.googleusercontent.com
+[2024-12-09 05:32:54] Received connection from 192.168.1.104:52798
+[2024-12-09 05:32:54] HTTPS request detected (CONNECT)
+[2024-12-09 05:32:54] HTTPS tunnel established with accounts.google.com
+[2024-12-09 05:32:54] Received connection from 192.168.1.104:52800
+[2024-12-09 05:32:54] HTTPS request detected (CONNECT)
+[2024-12-09 05:32:54] HTTPS tunnel established with play.google.com
+[2024-12-09 05:32:57] Received connection from 192.168.1.104:52803
+[2024-12-09 05:32:57] HTTPS request detected (CONNECT)
+[2024-12-09 05:32:57] HTTPS tunnel established with ogs.google.com
+[2024-12-09 05:32:58] Received connection from 192.168.1.104:52805
+[2024-12-09 05:32:58] Target domain not whitelisted: www.gstatic.com
+[2024-12-09 05:32:58] Received connection from 192.168.1.104:52806
+[2024-12-09 05:32:58] Target domain not whitelisted: www.gstatic.com
+[2024-12-09 05:32:58] Received connection from 192.168.1.104:52807
+[2024-12-09 05:32:58] Target domain not whitelisted: functional.events.data.microsoft.com
+[2024-12-09 05:33:00] Received connection from 192.168.1.104:52808
+[2024-12-09 05:33:00] Target domain not whitelisted: chatgpt.com
+[2024-12-09 05:33:01] Received connection from 192.168.1.104:52809
+[2024-12-09 05:33:01] Target domain not whitelisted: www.gstatic.com
+[2024-12-09 05:33:02] Received connection from 192.168.1.104:52810
+[2024-12-09 05:33:02] Target domain not whitelisted: lh3.googleusercontent.com
+[2024-12-09 05:33:03] Received connection from 192.168.1.104:52811
+[2024-12-09 05:33:03] Target domain not whitelisted: functional.events.data.microsoft.com
+[2024-12-09 05:33:06] Received connection from 192.168.1.104:52813
+[2024-12-09 05:33:06] Target domain not whitelisted: www.gstatic.com
+[2024-12-09 05:33:06] Received connection from 192.168.1.104:52814
+[2024-12-09 05:33:06] Target domain not whitelisted: www.gstatic.com
+[2024-12-09 05:33:10] Received connection from 192.168.1.104:52815
+[2024-12-09 05:33:10] Target domain not whitelisted: functional.events.data.microsoft.com
+[2024-12-09 05:33:14] Received connection from 192.168.1.104:52816
+[2024-12-09 05:33:14] Target domain not whitelisted: d.docs.live.net
+[2024-12-09 05:33:14] Received connection from 192.168.1.104:52817
+[2024-12-09 05:33:14] Target domain not whitelisted: functional.events.data.microsoft.com
+[2024-12-09 05:33:19] Received connection from 192.168.1.104:52819
+[2024-12-09 05:33:19] Target domain not whitelisted: functional.events.data.microsoft.com
+[2024-12-09 05:33:24] Received connection from 192.168.1.104:52820
+[2024-12-09 05:33:24] Target domain not whitelisted: functional.events.data.microsoft.com
+[2024-12-09 05:33:29] Received connection from 192.168.1.104:52822
+[2024-12-09 05:33:29] Target domain not whitelisted: functional.events.data.microsoft.com
+[2024-12-09 05:33:33] Received connection from 192.168.1.104:52823
+[2024-12-09 05:33:33] Target domain not whitelisted: functional.events.data.microsoft.com
+[2024-12-09 05:33:36] Received connection from 192.168.1.104:52825
+[2024-12-09 05:33:36] Target domain not whitelisted: bam.nr-data.net
+[2024-12-09 05:33:38] Received connection from 127.0.0.1:52827
+[2024-12-09 05:33:38] HTTP request detected: GET http://example.com/
+[2024-12-09 05:33:43] Completed request for client 127.0.0.1
+[2024-12-09 05:33:44] Received connection from 192.168.1.104:52831
+[2024-12-09 05:33:44] Target domain not whitelisted: d.docs.live.net
+[2024-12-09 05:33:46] Received connection from 127.0.0.1:52834
+[2024-12-09 05:33:46] HTTP request detected: GET http://example.com/
+[2024-12-09 05:33:46] Completed request for client 127.0.0.1
+[2024-12-09 05:33:57] Server interrupted by user.
+[2024-12-09 05:33:58] Shutting down the server.
+[2024-12-09 05:36:01] 
+
+Starting the Proxy Server
+
+[2024-12-09 05:36:01] Proxy is now listening on port 8080
+[2024-12-09 05:36:01] Initialized socket and listening on port 8080
+[2024-12-09 05:36:08] Received connection from 127.0.0.1:53057
+[2024-12-09 05:36:08] HTTP request detected: GET http://example.com/
+[2024-12-09 05:36:08] Cache file found for example_com_
+[2024-12-09 05:36:08] Cache hit for example_com_
+[2024-12-09 05:36:13] Received connection from 127.0.0.1:53059
+[2024-12-09 05:36:13] HTTP request detected: GET http://example.com/
+[2024-12-09 05:36:13] Cache file found for example_com_
+[2024-12-09 05:36:13] Cache hit for example_com_
+[2024-12-09 05:36:37] Received connection from 127.0.0.1:53078
+[2024-12-09 05:36:37] HTTP request detected: GET http://example.com/
+[2024-12-09 05:36:37] Completed request for client 127.0.0.1
+[2024-12-09 05:36:40] Received connection from 127.0.0.1:53081
+[2024-12-09 05:36:40] HTTP request detected: GET http://example.com/
+[2024-12-09 05:36:40] Cache file found for example_com_
+[2024-12-09 05:36:40] Cache hit for example_com_
+[2024-12-09 05:43:59] 
+
+Starting the Proxy Server
+
+[2024-12-09 05:43:59] Proxy is now listening on port 8080
+[2024-12-09 05:43:59] Initialized socket and listening on port 8080
+[2024-12-09 05:44:39] Received connection from 127.0.0.1:58929
+[2024-12-09 05:44:39] HTTP request detected: GET http://example.com/
+[2024-12-09 05:44:40] Completed request for client 127.0.0.1
+[2024-12-09 05:44:57] Received connection from 127.0.0.1:58937
+[2024-12-09 05:44:57] HTTP request detected: GET http://example.com/
+[2024-12-09 05:44:57] Cache file found for example_com_
+[2024-12-09 05:44:57] Cache hit for example_com_
