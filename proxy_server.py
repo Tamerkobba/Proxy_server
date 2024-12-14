@@ -20,6 +20,9 @@ class ProxyServer:
             os.makedirs("cache")
 
     def log_message(self, message):
+        """Opens the file specified by self.log_file_path in append mode (a+), ensuring that
+        each message is added to the end of the file without overwriting existing logs."""
+
         timestamped_message = self.current_timestamp() + " " + message
         # Write to log file
         with open(self.log_file_path, "a+", encoding="utf-8") as f:
@@ -31,6 +34,10 @@ class ProxyServer:
         return "[" + datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M:%S') + "]"
 
     def start(self, max_connections=5, buffer_size=4096, listen_port=8080):
+        """max_connections: Maximum number of clients that can connect simultaneously.
+           buffer_size: The size (in bytes) of the data chunks the server reads/writes.
+           listen_port: The port number the server listens on (default is 8080)."""
+
         self.log_message("\n\nStarting the Proxy Server\n")
         try:
             self.listen_for_clients(max_connections, buffer_size, listen_port)
@@ -57,6 +64,9 @@ class ProxyServer:
             print("--- End of Log File ---\n")
 
     def listen_for_clients(self, max_conn, buffer_size, port):
+        """AF_INET: Specifies IPv4 addressing
+           SOCK_STREAM: Indicates TCP protocol.
+        """
         try:
             listener = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             listener.bind(('', port))
@@ -129,6 +139,8 @@ class ProxyServer:
             connection.close()
 
     def parse_http_request(self, connection, buff_size):
+        """This function is responsible for parsing an HTTP request from a network connection
+         and extracting key components like the HTTP method, URL, and headers"""
         data = b''
         connection.settimeout(3)
         try:
@@ -141,15 +153,15 @@ class ProxyServer:
             return None, None, None
 
         parts = data.split(b'\r\n\r\n', 1)
-        if len(parts) < 2:
+        if len(parts) < 2:# if parts has less than two elements, the function returns (None, None, None) as the request is malformed
             return None, None, None
         header_data = parts[0].split(b'\r\n')
         if len(header_data) == 0:
             return None, None, None
-
+        #The first line contains the HTTP method, URL, and version.
         request_line = header_data[0].decode('utf-8', errors='replace')
         segments = request_line.split(' ')
-        if len(segments) < 3:
+        if len(segments) < 3:#If it's malformed, returns None.
             return None, None, None
         method, url, version = segments[0], segments[1], segments[2]
 
@@ -167,6 +179,8 @@ class ProxyServer:
         return method, url, headers
 
     def parse_host_port_from_url(self, url):
+        """This function extracts the host, port,
+         and sanitized version of the requested file from a URL"""
         protocol_index = url.find("://")
         if protocol_index == -1:
             temp_url = url
@@ -365,8 +379,8 @@ class ProxyServer:
             pass
 
 if __name__ == "__main__":
-    blocked_sites = ['facebook']
-    allowed_sites = ['google','example']
+    blocked_sites = []
+    allowed_sites = []
 
     proxy = ProxyServer(blocked_sites=blocked_sites, allowed_sites=allowed_sites)
     proxy.start()
